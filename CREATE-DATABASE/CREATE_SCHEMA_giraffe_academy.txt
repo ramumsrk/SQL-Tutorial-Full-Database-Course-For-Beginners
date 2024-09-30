@@ -1,0 +1,116 @@
+mysql> source /home/ramumsrk/Documents/repositories/SQL-Tutorial-Full-Database-Course-For-Beginners/CREATE-DATABASE/CREATE_SCHEMA_giraffe_academy.sql
+--------------
+CREATE SCHEMA IF NOT EXISTS giraffe_academy
+--------------
+
+Query OK, 1 row affected (0.03 sec)
+
+mysql> SELECT -- Projection
+    ->        schema_name
+    ->   FROM information_schema.schemata
+    ->  WHERE -- Selection
+    ->        -- Component condition
+    ->        schema_name = 'giraffe_academy'
+    -> \p
+--------------
+SELECT 
+       schema_name
+  FROM information_schema.schemata
+ WHERE 
+       
+       schema_name = 'giraffe_academy'
+--------------
+
+    -> \g
++-----------------+
+| SCHEMA_NAME     |
++-----------------+
+| giraffe_academy |
++-----------------+
+1 row in set (0.01 sec)
+
+mysql> SHOW DATABASES
+    -> \p
+--------------
+SHOW DATABASES
+--------------
+
+    -> \g
++--------------------+
+| Database           |
++--------------------+
+| giraffe_academy    |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> SELECT -- Projection
+    ->        *
+    ->   FROM information_schema.schemata
+    ->  WHERE -- Selection
+    ->        -- Component condition
+    ->        schema_name = 'giraffe_academy'
+    -> \p
+--------------
+SELECT 
+       *
+  FROM information_schema.schemata
+ WHERE 
+       
+       schema_name = 'giraffe_academy'
+--------------
+
+    -> \G
+*************************** 1. row ***************************
+              CATALOG_NAME: def
+               SCHEMA_NAME: giraffe_academy
+DEFAULT_CHARACTER_SET_NAME: utf8mb4
+    DEFAULT_COLLATION_NAME: utf8mb4_0900_ai_ci
+                  SQL_PATH: NULL
+        DEFAULT_ENCRYPTION: NO
+1 row in set (0.00 sec)
+
+mysql> status
+--------------
+
+Connection id:		23
+Current database:	
+Current user:		root@localhost
+SSL:			Not in use
+Current pager:		stdout
+Using outfile:		'/home/ramumsrk/Documents/repositories/SQL-Tutorial-Full-Database-Course-For-Beginners/CREATE-DATABASE/CREATE_SCHEMA_giraffe_academy.txt'
+Using delimiter:	;
+Server version:		8.0.39-0ubuntu0.24.04.2 (Ubuntu)
+Protocol version:	10
+Connection:		Localhost via UNIX socket
+Server characterset:	utf8mb4
+Db     characterset:	utf8mb4
+Client characterset:	utf8mb4
+Conn.  characterset:	utf8mb4
+UNIX socket:		/var/run/mysqld/mysqld.sock
+Binary data as:		Hexadecimal
+Uptime:			3 hours 19 min 2 sec
+
+Threads: 2  Questions: 26  Slow queries: 0  Opens: 150  Flush tables: 3  Open tables: 69  Queries per second avg: 0.002
+--------------
+
+mysql> SELECT USER() AS "Currently logged in user"
+    -> \p
+--------------
+SELECT USER() AS "Currently logged in user"
+--------------
+
+    -> ;
++--------------------------+
+| Currently logged in user |
++--------------------------+
+| root@localhost           |
++--------------------------+
+1 row in set (0.00 sec)
+
+mysql> \T
+Currently logging to file '/home/ramumsrk/Documents/repositories/SQL-Tutorial-Full-Database-Course-For-Beginners/CREATE-DATABASE/CREATE_SCHEMA_giraffe_academy.txt'
+mysql> \t
