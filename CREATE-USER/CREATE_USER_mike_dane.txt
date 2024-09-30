@@ -1,0 +1,117 @@
+mysql> \. /home/ramumsrk/Documents/repositories/SQL-Tutorial-Full-Database-Course-For-Beginners/CREATE-USER/CREATE_USER_mike_dane.sql
+--------------
+CREATE USER IF NOT EXISTS 'mike_dane'@'127.0.0.1' IDENTIFIED BY 'mike_dane'
+--------------
+
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> SELECT -- Projection
+    ->        *
+    ->   FROM mysql.user
+    ->  WHERE -- Selection
+    ->        -- Component condition
+    ->        user = 'mike_dane'
+    -> \p
+--------------
+SELECT 
+       *
+  FROM mysql.user
+ WHERE 
+       
+       user = 'mike_dane'
+--------------
+
+    -> \G
+*************************** 1. row ***************************
+                    Host: 127.0.0.1
+                    User: mike_dane
+             Select_priv: N
+             Insert_priv: N
+             Update_priv: N
+             Delete_priv: N
+             Create_priv: N
+               Drop_priv: N
+             Reload_priv: N
+           Shutdown_priv: N
+            Process_priv: N
+               File_priv: N
+              Grant_priv: N
+         References_priv: N
+              Index_priv: N
+              Alter_priv: N
+            Show_db_priv: N
+              Super_priv: N
+   Create_tmp_table_priv: N
+        Lock_tables_priv: N
+            Execute_priv: N
+         Repl_slave_priv: N
+        Repl_client_priv: N
+        Create_view_priv: N
+          Show_view_priv: N
+     Create_routine_priv: N
+      Alter_routine_priv: N
+        Create_user_priv: N
+              Event_priv: N
+            Trigger_priv: N
+  Create_tablespace_priv: N
+                ssl_type: 
+              ssl_cipher: 
+             x509_issuer: 
+            x509_subject: 
+           max_questions: 0
+             max_updates: 0
+         max_connections: 0
+    max_user_connections: 0
+                  plugin: caching_sha2_password
+   authentication_string: $A$005$v=8X[c2!QQM ZMTg0luA1BS0CAFKjd4qrwxtG9qBUb1jQyZLEuOBkZUSc2/
+        password_expired: N
+   password_last_changed: 2024-09-30 22:11:57
+       password_lifetime: NULL
+          account_locked: N
+        Create_role_priv: N
+          Drop_role_priv: N
+  Password_reuse_history: NULL
+     Password_reuse_time: NULL
+Password_require_current: NULL
+         User_attributes: NULL
+1 row in set (0.00 sec)
+
+mysql> status
+--------------
+
+Connection id:		23
+Current database:	
+Current user:		root@localhost
+SSL:			Not in use
+Current pager:		stdout
+Using outfile:		'/home/ramumsrk/Documents/repositories/SQL-Tutorial-Full-Database-Course-For-Beginners/CREATE-USER/CREATE_USER_mike_dane.txt'
+Using delimiter:	;
+Server version:		8.0.39-0ubuntu0.24.04.2 (Ubuntu)
+Protocol version:	10
+Connection:		Localhost via UNIX socket
+Server characterset:	utf8mb4
+Db     characterset:	utf8mb4
+Client characterset:	utf8mb4
+Conn.  characterset:	utf8mb4
+UNIX socket:		/var/run/mysqld/mysqld.sock
+Binary data as:		Hexadecimal
+Uptime:			3 hours 28 min 47 sec
+
+Threads: 2  Questions: 32  Slow queries: 0  Opens: 164  Flush tables: 3  Open tables: 83  Queries per second avg: 0.002
+--------------
+
+mysql> SELECT USER()
+    -> \p
+--------------
+SELECT USER()
+--------------
+
+    -> ;
++----------------+
+| USER()         |
++----------------+
+| root@localhost |
++----------------+
+1 row in set (0.00 sec)
+
+mysql> \t
