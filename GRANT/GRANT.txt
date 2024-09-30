@@ -1,0 +1,62 @@
+mysql> source /home/ramumsrk/Documents/repositories/SQL-Tutorial-Full-Database-Course-For-Beginners/GRANT/GRANT.sql
+--------------
+GRANT ALL ON giraffe_academy.* TO 'mike_dane'@'127.0.0.1'
+--------------
+
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> SELECT USER()
+    -> \p
+--------------
+SELECT USER()
+--------------
+
+    -> ;
++----------------+
+| USER()         |
++----------------+
+| root@localhost |
++----------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT DATABASE()
+    -> \p
+--------------
+SELECT DATABASE()
+--------------
+
+    -> \g
++------------+
+| DATABASE() |
++------------+
+| NULL       |
++------------+
+1 row in set (0.00 sec)
+
+mysql> status
+--------------
+
+Connection id:		23
+Current database:	
+Current user:		root@localhost
+SSL:			Not in use
+Current pager:		stdout
+Using outfile:		'/home/ramumsrk/Documents/repositories/SQL-Tutorial-Full-Database-Course-For-Beginners/GRANT/GRANT.txt'
+Using delimiter:	;
+Server version:		8.0.39-0ubuntu0.24.04.2 (Ubuntu)
+Protocol version:	10
+Connection:		Localhost via UNIX socket
+Server characterset:	utf8mb4
+Db     characterset:	utf8mb4
+Client characterset:	utf8mb4
+Conn.  characterset:	utf8mb4
+UNIX socket:		/var/run/mysqld/mysqld.sock
+Binary data as:		Hexadecimal
+Uptime:			3 hours 32 min 46 sec
+
+Threads: 2  Questions: 39  Slow queries: 0  Opens: 164  Flush tables: 3  Open tables: 83  Queries per second avg: 0.003
+--------------
+
+mysql> warnings
+Show warnings enabled.
+mysql> notee
