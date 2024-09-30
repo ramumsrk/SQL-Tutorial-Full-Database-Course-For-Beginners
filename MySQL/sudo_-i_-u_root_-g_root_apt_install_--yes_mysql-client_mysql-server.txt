@@ -1,0 +1,219 @@
+sudo -i -u root -g root apt install --yes mysql-{client,server}=8.0.39-0ubuntu0.24.04.2
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libcgi-fast-perl libcgi-pm-perl
+  libevent-core-2.1-7t64
+  libevent-pthreads-2.1-7t64 libfcgi-bin
+  libfcgi-perl libfcgi0t64
+  libhtml-template-perl libmecab2 mecab-ipadic
+  mecab-ipadic-utf8 mecab-utils
+  mysql-client-8.0 mysql-client-core-8.0
+  mysql-common mysql-server-8.0
+  mysql-server-core-8.0
+Suggested packages:
+  libipc-sharedcache-perl mailx tinyca
+The following NEW packages will be installed:
+  libcgi-fast-perl libcgi-pm-perl
+  libevent-core-2.1-7t64
+  libevent-pthreads-2.1-7t64 libfcgi-bin
+  libfcgi-perl libfcgi0t64
+  libhtml-template-perl libmecab2 mecab-ipadic
+  mecab-ipadic-utf8 mecab-utils mysql-client
+  mysql-client-8.0 mysql-client-core-8.0
+  mysql-common mysql-server mysql-server-8.0
+  mysql-server-core-8.0
+0 upgraded, 19 newly installed, 0 to remove and 3 not upgraded.
+Need to get 29.1 MB of archives.
+After this operation, 241 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 mysql-common all 5.8+1.1.0build1 [6,746 B]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mysql-client-core-8.0 amd64 8.0.39-0ubuntu0.24.04.2 [2,794 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mysql-client-8.0 amd64 8.0.39-0ubuntu0.24.04.2 [22.5 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 libevent-core-2.1-7t64 amd64 2.1.12-stable-9ubuntu2 [91.3 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 libevent-pthreads-2.1-7t64 amd64 2.1.12-stable-9ubuntu2 [7,982 B]
+Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 libmecab2 amd64 0.996-14ubuntu4 [201 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mysql-server-core-8.0 amd64 8.0.39-0ubuntu0.24.04.2 [17.5 MB]
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mysql-server-8.0 amd64 8.0.39-0ubuntu0.24.04.2 [1,428 kB]
+Ign:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mysql-server-8.0 amd64 8.0.39-0ubuntu0.24.04.2
+Get:9 http://archive.ubuntu.com/ubuntu noble/main amd64 libcgi-pm-perl all 4.63-1 [185 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 libfcgi0t64 amd64 2.4.2-2.1build1 [26.8 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble/main amd64 libfcgi-perl amd64 0.82+ds-3build2 [21.7 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble/main amd64 libcgi-fast-perl all 1:2.17-1 [10.3 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble/main amd64 libfcgi-bin amd64 2.4.2-2.1build1 [11.2 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble/main amd64 libhtml-template-perl all 2.97-2 [60.2 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble/main amd64 mecab-utils amd64 0.996-14ubuntu4 [4,804 B]
+Get:16 http://archive.ubuntu.com/ubuntu noble/main amd64 mecab-ipadic all 2.7.0-20070801+main-3 [6,718 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble/main amd64 mecab-ipadic-utf8 all 2.7.0-20070801+main-3 [4,384 B]
+Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mysql-client all 8.0.39-0ubuntu0.24.04.2 [9,412 B]
+Get:19 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mysql-server all 8.0.39-0ubuntu0.24.04.2 [9,520 B]
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mysql-server-8.0 amd64 8.0.39-0ubuntu0.24.04.2 [1,428 kB]
+Fetched 29.0 MB in 3min 21s (145 kB/s)          
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
+Preconfiguring packages ...
+Selecting previously unselected package mysql-common.
+(Reading database ... 242655 files and directories currently installed.)
+Preparing to unpack .../0-mysql-common_5.8+1.1.0build1_all.deb ...
+Unpacking mysql-common (5.8+1.1.0build1) ...
+Selecting previously unselected package mysql-client-core-8.0.
+Preparing to unpack .../1-mysql-client-core-8.0_8.0.39-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking mysql-client-core-8.0 (8.0.39-0ubuntu0.24.04.2) ...
+Selecting previously unselected package mysql-client-8.0.
+Preparing to unpack .../2-mysql-client-8.0_8.0.39-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking mysql-client-8.0 (8.0.39-0ubuntu0.24.04.2) ...
+Selecting previously unselected package libevent-core-2.1-7t64:amd64.
+Preparing to unpack .../3-libevent-core-2.1-7t64_2.1.12-stable-9ubuntu2_amd64.deb ...
+Unpacking libevent-core-2.1-7t64:amd64 (2.1.12-stable-9ubuntu2) ...
+Selecting previously unselected package libevent-pthreads-2.1-7t64:amd64.
+Preparing to unpack .../4-libevent-pthreads-2.1-7t64_2.1.12-stable-9ubuntu2_amd64.deb ...
+Unpacking libevent-pthreads-2.1-7t64:amd64 (2.1.12-stable-9ubuntu2) ...
+Selecting previously unselected package libmecab2:amd64.
+Preparing to unpack .../5-libmecab2_0.996-14ubuntu4_amd64.deb ...
+Unpacking libmecab2:amd64 (0.996-14ubuntu4) ...
+Selecting previously unselected package mysql-server-core-8.0.
+Preparing to unpack .../6-mysql-server-core-8.0_8.0.39-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking mysql-server-core-8.0 (8.0.39-0ubuntu0.24.04.2) ...
+Setting up mysql-common (5.8+1.1.0build1) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Selecting previously unselected package mysql-server-8.0.
+(Reading database ... 242874 files and directories currently installed.)
+Preparing to unpack .../00-mysql-server-8.0_8.0.39-0ubuntu0.24.04.2_amd64.deb ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
+Unpacking mysql-server-8.0 (8.0.39-0ubuntu0.24.04.2) ...
+Selecting previously unselected package libcgi-pm-perl.
+Preparing to unpack .../01-libcgi-pm-perl_4.63-1_all.deb ...
+Unpacking libcgi-pm-perl (4.63-1) ...
+Selecting previously unselected package libfcgi0t64:amd64.
+Preparing to unpack .../02-libfcgi0t64_2.4.2-2.1build1_amd64.deb ...
+Unpacking libfcgi0t64:amd64 (2.4.2-2.1build1) ...
+Selecting previously unselected package libfcgi-perl.
+Preparing to unpack .../03-libfcgi-perl_0.82+ds-3build2_amd64.deb ...
+Unpacking libfcgi-perl (0.82+ds-3build2) ...
+Selecting previously unselected package libcgi-fast-perl.
+Preparing to unpack .../04-libcgi-fast-perl_1%3a2.17-1_all.deb ...
+Unpacking libcgi-fast-perl (1:2.17-1) ...
+Selecting previously unselected package libfcgi-bin.
+Preparing to unpack .../05-libfcgi-bin_2.4.2-2.1build1_amd64.deb ...
+Unpacking libfcgi-bin (2.4.2-2.1build1) ...
+Selecting previously unselected package libhtml-template-perl.
+Preparing to unpack .../06-libhtml-template-perl_2.97-2_all.deb ...
+Unpacking libhtml-template-perl (2.97-2) ...
+Selecting previously unselected package mecab-utils.
+Preparing to unpack .../07-mecab-utils_0.996-14ubuntu4_amd64.deb ...
+Unpacking mecab-utils (0.996-14ubuntu4) ...
+Selecting previously unselected package mecab-ipadic.
+Preparing to unpack .../08-mecab-ipadic_2.7.0-20070801+main-3_all.deb ...
+Unpacking mecab-ipadic (2.7.0-20070801+main-3) ...
+Selecting previously unselected package mecab-ipadic-utf8.
+Preparing to unpack .../09-mecab-ipadic-utf8_2.7.0-20070801+main-3_all.deb ...
+Unpacking mecab-ipadic-utf8 (2.7.0-20070801+main-3) ...
+Selecting previously unselected package mysql-client.
+Preparing to unpack .../10-mysql-client_8.0.39-0ubuntu0.24.04.2_all.deb ...
+Unpacking mysql-client (8.0.39-0ubuntu0.24.04.2) ...
+Selecting previously unselected package mysql-server.
+Preparing to unpack .../11-mysql-server_8.0.39-0ubuntu0.24.04.2_all.deb ...
+Unpacking mysql-server (8.0.39-0ubuntu0.24.04.2) ...
+Setting up libmecab2:amd64 (0.996-14ubuntu4) ...
+Setting up mysql-client-core-8.0 (8.0.39-0ubuntu0.24.04.2) ...
+Setting up libfcgi0t64:amd64 (2.4.2-2.1build1) ...
+Setting up libcgi-pm-perl (4.63-1) ...
+Setting up libfcgi-bin (2.4.2-2.1build1) ...
+Setting up libhtml-template-perl (2.97-2) ...
+Setting up mecab-utils (0.996-14ubuntu4) ...
+Setting up mysql-client-8.0 (8.0.39-0ubuntu0.24.04.2) ...
+Setting up libfcgi-perl (0.82+ds-3build2) ...
+Setting up libevent-core-2.1-7t64:amd64 (2.1.12-stable-9ubuntu2) ...
+Setting up mysql-client (8.0.39-0ubuntu0.24.04.2) ...
+Setting up mecab-ipadic (2.7.0-20070801+main-3) ...
+Compiling IPA dictionary for Mecab.  This takes long time...
+reading /usr/share/mecab/dic/ipadic/unk.def ... 40
+emitting double-array:   9% |###                 emitting double-array:  18% |#######             emitting double-array:  27% |###########         emitting double-array:  36% |###############     emitting double-array:  45% |################### emitting double-array:  54% |####################emitting double-array:  63% |####################emitting double-array:  72% |####################emitting double-array:  81% |####################emitting double-array:  90% |####################emitting double-array: 100% |###########################################| 
+/usr/share/mecab/dic/ipadic/model.def is not found. skipped.
+reading /usr/share/mecab/dic/ipadic/Adj.csv ... 27210
+reading /usr/share/mecab/dic/ipadic/Adnominal.csv ... 135
+reading /usr/share/mecab/dic/ipadic/Adverb.csv ... 3032
+reading /usr/share/mecab/dic/ipadic/Auxil.csv ... 199
+reading /usr/share/mecab/dic/ipadic/Conjunction.csv ... 171
+reading /usr/share/mecab/dic/ipadic/Filler.csv ... 19
+reading /usr/share/mecab/dic/ipadic/Interjection.csv ... 252
+reading /usr/share/mecab/dic/ipadic/Noun.adjv.csv ... 3328
+reading /usr/share/mecab/dic/ipadic/Noun.adverbal.csv ... 795
+reading /usr/share/mecab/dic/ipadic/Noun.csv ... 60477
+reading /usr/share/mecab/dic/ipadic/Noun.demonst.csv ... 120
+reading /usr/share/mecab/dic/ipadic/Noun.nai.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Noun.name.csv ... 34202
+reading /usr/share/mecab/dic/ipadic/Noun.number.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Noun.org.csv ... 16668
+reading /usr/share/mecab/dic/ipadic/Noun.others.csv ... 151
+reading /usr/share/mecab/dic/ipadic/Noun.place.csv ... 72999
+reading /usr/share/mecab/dic/ipadic/Noun.proper.csv ... 27328
+reading /usr/share/mecab/dic/ipadic/Noun.verbal.csv ... 12146
+reading /usr/share/mecab/dic/ipadic/Others.csv ... 2
+reading /usr/share/mecab/dic/ipadic/Postp-col.csv ... 91
+reading /usr/share/mecab/dic/ipadic/Postp.csv ... 146
+reading /usr/share/mecab/dic/ipadic/Prefix.csv ... 221
+reading /usr/share/mecab/dic/ipadic/Suffix.csv ... 1393
+reading /usr/share/mecab/dic/ipadic/Symbol.csv ... 208
+reading /usr/share/mecab/dic/ipadic/Verb.csv ... 130750
+emitting double-array:   0% |                    emitting double-array:   1% |                    emitting double-array:   2% |                    emitting double-array:   3% |#                   emitting double-array:   4% |#                   emitting double-array:   5% |##                  emitting double-array:   6% |##                  emitting double-array:   7% |###                 emitting double-array:   8% |###                 emitting double-array:   9% |###                 emitting double-array:  10% |####                emitting double-array:  11% |####                emitting double-array:  12% |#####               emitting double-array:  13% |#####               emitting double-array:  14% |######              emitting double-array:  15% |######              emitting double-array:  16% |######              emitting double-array:  17% |#######             emitting double-array:  18% |#######             emitting double-array:  19% |########            emitting double-array:  20% |########            emitting double-array:  21% |#########           emitting double-array:  22% |#########           emitting double-array:  23% |#########           emitting double-array:  24% |##########          emitting double-array:  25% |##########          emitting double-array:  26% |###########         emitting double-array:  27% |###########         emitting double-array:  28% |############        emitting double-array:  29% |############        emitting double-array:  30% |############        emitting double-array:  31% |#############       emitting double-array:  32% |#############       emitting double-array:  33% |##############      emitting double-array:  34% |##############      emitting double-array:  35% |###############     emitting double-array:  36% |###############     emitting double-array:  37% |###############     emitting double-array:  38% |################    emitting double-array:  39% |################    emitting double-array:  40% |#################   emitting double-array:  41% |#################   emitting double-array:  42% |##################  emitting double-array:  43% |##################  emitting double-array:  44% |##################  emitting double-array:  45% |################### emitting double-array:  46% |################### emitting double-array:  47% |####################emitting double-array:  48% |####################emitting double-array:  49% |####################emitting double-array:  50% |####################emitting double-array:  51% |####################emitting double-array:  52% |####################emitting double-array:  53% |####################emitting double-array:  54% |####################emitting double-array:  55% |####################emitting double-array:  56% |####################emitting double-array:  57% |####################emitting double-array:  58% |####################emitting double-array:  59% |####################emitting double-array:  60% |####################emitting double-array:  61% |####################emitting double-array:  62% |####################emitting double-array:  63% |####################emitting double-array:  64% |####################emitting double-array:  65% |####################emitting double-array:  66% |####################emitting double-array:  67% |####################emitting double-array:  68% |####################emitting double-array:  69% |####################emitting double-array:  70% |####################emitting double-array:  71% |####################emitting double-array:  72% |####################emitting double-array:  73% |####################emitting double-array:  74% |####################emitting double-array:  75% |####################emitting double-array:  76% |####################emitting double-array:  77% |####################emitting double-array:  78% |####################emitting double-array:  79% |####################emitting double-array:  80% |####################emitting double-array:  81% |####################emitting double-array:  82% |####################emitting double-array:  83% |####################emitting double-array:  84% |####################emitting double-array:  85% |####################emitting double-array:  86% |####################emitting double-array:  87% |####################emitting double-array:  88% |####################emitting double-array:  89% |####################emitting double-array:  90% |####################emitting double-array:  91% |####################emitting double-array:  92% |####################emitting double-array:  93% |####################emitting double-array:  94% |####################emitting double-array:  95% |####################emitting double-array:  96% |####################emitting double-array:  97% |####################emitting double-array:  98% |####################emitting double-array:  99% |####################emitting double-array: 100% |###########################################| 
+reading /usr/share/mecab/dic/ipadic/matrix.def ... 1316x1316
+emitting matrix      :   0% |                    emitting matrix      :   1% |                    emitting matrix      :   2% |                    emitting matrix      :   3% |#                   emitting matrix      :   4% |#                   emitting matrix      :   5% |##                  emitting matrix      :   6% |##                  emitting matrix      :   7% |###                 emitting matrix      :   8% |###                 emitting matrix      :   9% |###                 emitting matrix      :  10% |####                emitting matrix      :  11% |####                emitting matrix      :  12% |#####               emitting matrix      :  13% |#####               emitting matrix      :  14% |######              emitting matrix      :  15% |######              emitting matrix      :  16% |######              emitting matrix      :  17% |#######             emitting matrix      :  18% |#######             emitting matrix      :  19% |########            emitting matrix      :  20% |########            emitting matrix      :  21% |#########           emitting matrix      :  22% |#########           emitting matrix      :  23% |#########           emitting matrix      :  24% |##########          emitting matrix      :  25% |##########          emitting matrix      :  26% |###########         emitting matrix      :  27% |###########         emitting matrix      :  28% |############        emitting matrix      :  29% |############        emitting matrix      :  30% |############        emitting matrix      :  31% |#############       emitting matrix      :  32% |#############       emitting matrix      :  33% |##############      emitting matrix      :  34% |##############      emitting matrix      :  35% |###############     emitting matrix      :  36% |###############     emitting matrix      :  37% |###############     emitting matrix      :  38% |################    emitting matrix      :  39% |################    emitting matrix      :  40% |#################   emitting matrix      :  41% |#################   emitting matrix      :  42% |##################  emitting matrix      :  43% |##################  emitting matrix      :  44% |##################  emitting matrix      :  45% |################### emitting matrix      :  46% |################### emitting matrix      :  47% |####################emitting matrix      :  48% |####################emitting matrix      :  49% |####################emitting matrix      :  50% |####################emitting matrix      :  51% |####################emitting matrix      :  52% |####################emitting matrix      :  53% |####################emitting matrix      :  54% |####################emitting matrix      :  55% |####################emitting matrix      :  56% |####################emitting matrix      :  57% |####################emitting matrix      :  58% |####################emitting matrix      :  59% |####################emitting matrix      :  60% |####################emitting matrix      :  61% |####################emitting matrix      :  62% |####################emitting matrix      :  63% |####################emitting matrix      :  64% |####################emitting matrix      :  65% |####################emitting matrix      :  66% |####################emitting matrix      :  67% |####################emitting matrix      :  68% |####################emitting matrix      :  69% |####################emitting matrix      :  70% |####################emitting matrix      :  71% |####################emitting matrix      :  72% |####################emitting matrix      :  73% |####################emitting matrix      :  74% |####################emitting matrix      :  75% |####################emitting matrix      :  76% |####################emitting matrix      :  77% |####################emitting matrix      :  78% |####################emitting matrix      :  79% |####################emitting matrix      :  80% |####################emitting matrix      :  81% |####################emitting matrix      :  82% |####################emitting matrix      :  83% |####################emitting matrix      :  84% |####################emitting matrix      :  85% |####################emitting matrix      :  86% |####################emitting matrix      :  87% |####################emitting matrix      :  88% |####################emitting matrix      :  89% |####################emitting matrix      :  90% |####################emitting matrix      :  91% |####################emitting matrix      :  92% |####################emitting matrix      :  93% |####################emitting matrix      :  94% |####################emitting matrix      :  95% |####################emitting matrix      :  96% |####################emitting matrix      :  97% |####################emitting matrix      :  98% |####################emitting matrix      :  99% |####################emitting matrix      : 100% |###########################################| 
+
+done!
+update-alternatives: using /var/lib/mecab/dic/ipadic to provide /var/lib/mecab/dic/debian (mecab-dictionary) in auto mode
+Setting up libcgi-fast-perl (1:2.17-1) ...
+Setting up libevent-pthreads-2.1-7t64:amd64 (2.1.12-stable-9ubuntu2) ...
+Setting up mysql-server-core-8.0 (8.0.39-0ubuntu0.24.04.2) ...
+Setting up mecab-ipadic-utf8 (2.7.0-20070801+main-3) ...
+Compiling IPA dictionary for Mecab.  This takes long time...
+reading /usr/share/mecab/dic/ipadic/unk.def ... 40
+emitting double-array:   9% |###                 emitting double-array:  18% |#######             emitting double-array:  27% |###########         emitting double-array:  36% |###############     emitting double-array:  45% |################### emitting double-array:  54% |####################emitting double-array:  63% |####################emitting double-array:  72% |####################emitting double-array:  81% |####################emitting double-array:  90% |####################emitting double-array: 100% |###########################################| 
+/usr/share/mecab/dic/ipadic/model.def is not found. skipped.
+reading /usr/share/mecab/dic/ipadic/Adj.csv ... 27210
+reading /usr/share/mecab/dic/ipadic/Adnominal.csv ... 135
+reading /usr/share/mecab/dic/ipadic/Adverb.csv ... 3032
+reading /usr/share/mecab/dic/ipadic/Auxil.csv ... 199
+reading /usr/share/mecab/dic/ipadic/Conjunction.csv ... 171
+reading /usr/share/mecab/dic/ipadic/Filler.csv ... 19
+reading /usr/share/mecab/dic/ipadic/Interjection.csv ... 252
+reading /usr/share/mecab/dic/ipadic/Noun.adjv.csv ... 3328
+reading /usr/share/mecab/dic/ipadic/Noun.adverbal.csv ... 795
+reading /usr/share/mecab/dic/ipadic/Noun.csv ... 60477
+reading /usr/share/mecab/dic/ipadic/Noun.demonst.csv ... 120
+reading /usr/share/mecab/dic/ipadic/Noun.nai.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Noun.name.csv ... 34202
+reading /usr/share/mecab/dic/ipadic/Noun.number.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Noun.org.csv ... 16668
+reading /usr/share/mecab/dic/ipadic/Noun.others.csv ... 151
+reading /usr/share/mecab/dic/ipadic/Noun.place.csv ... 72999
+reading /usr/share/mecab/dic/ipadic/Noun.proper.csv ... 27328
+reading /usr/share/mecab/dic/ipadic/Noun.verbal.csv ... 12146
+reading /usr/share/mecab/dic/ipadic/Others.csv ... 2
+reading /usr/share/mecab/dic/ipadic/Postp-col.csv ... 91
+reading /usr/share/mecab/dic/ipadic/Postp.csv ... 146
+reading /usr/share/mecab/dic/ipadic/Prefix.csv ... 221
+reading /usr/share/mecab/dic/ipadic/Suffix.csv ... 1393
+reading /usr/share/mecab/dic/ipadic/Symbol.csv ... 208
+reading /usr/share/mecab/dic/ipadic/Verb.csv ... 130750
+emitting double-array:   0% |                    emitting double-array:   1% |                    emitting double-array:   2% |                    emitting double-array:   3% |#                   emitting double-array:   4% |#                   emitting double-array:   5% |##                  emitting double-array:   6% |##                  emitting double-array:   7% |###                 emitting double-array:   8% |###                 emitting double-array:   9% |###                 emitting double-array:  10% |####                emitting double-array:  11% |####                emitting double-array:  12% |#####               emitting double-array:  13% |#####               emitting double-array:  14% |######              emitting double-array:  15% |######              emitting double-array:  16% |######              emitting double-array:  17% |#######             emitting double-array:  18% |#######             emitting double-array:  19% |########            emitting double-array:  20% |########            emitting double-array:  21% |#########           emitting double-array:  22% |#########           emitting double-array:  23% |#########           emitting double-array:  24% |##########          emitting double-array:  25% |##########          emitting double-array:  26% |###########         emitting double-array:  27% |###########         emitting double-array:  28% |############        emitting double-array:  29% |############        emitting double-array:  30% |############        emitting double-array:  31% |#############       emitting double-array:  32% |#############       emitting double-array:  33% |##############      emitting double-array:  34% |##############      emitting double-array:  35% |###############     emitting double-array:  36% |###############     emitting double-array:  37% |###############     emitting double-array:  38% |################    emitting double-array:  39% |################    emitting double-array:  40% |#################   emitting double-array:  41% |#################   emitting double-array:  42% |##################  emitting double-array:  43% |##################  emitting double-array:  44% |##################  emitting double-array:  45% |################### emitting double-array:  46% |################### emitting double-array:  47% |####################emitting double-array:  48% |####################emitting double-array:  49% |####################emitting double-array:  50% |####################emitting double-array:  51% |####################emitting double-array:  52% |####################emitting double-array:  53% |####################emitting double-array:  54% |####################emitting double-array:  55% |####################emitting double-array:  56% |####################emitting double-array:  57% |####################emitting double-array:  58% |####################emitting double-array:  59% |####################emitting double-array:  60% |####################emitting double-array:  61% |####################emitting double-array:  62% |####################emitting double-array:  63% |####################emitting double-array:  64% |####################emitting double-array:  65% |####################emitting double-array:  66% |####################emitting double-array:  67% |####################emitting double-array:  68% |####################emitting double-array:  69% |####################emitting double-array:  70% |####################emitting double-array:  71% |####################emitting double-array:  72% |####################emitting double-array:  73% |####################emitting double-array:  74% |####################emitting double-array:  75% |####################emitting double-array:  76% |####################emitting double-array:  77% |####################emitting double-array:  78% |####################emitting double-array:  79% |####################emitting double-array:  80% |####################emitting double-array:  81% |####################emitting double-array:  82% |####################emitting double-array:  83% |####################emitting double-array:  84% |####################emitting double-array:  85% |####################emitting double-array:  86% |####################emitting double-array:  87% |####################emitting double-array:  88% |####################emitting double-array:  89% |####################emitting double-array:  90% |####################emitting double-array:  91% |####################emitting double-array:  92% |####################emitting double-array:  93% |####################emitting double-array:  94% |####################emitting double-array:  95% |####################emitting double-array:  96% |####################emitting double-array:  97% |####################emitting double-array:  98% |####################emitting double-array:  99% |####################emitting double-array: 100% |###########################################| 
+reading /usr/share/mecab/dic/ipadic/matrix.def ... 1316x1316
+emitting matrix      :   0% |                    emitting matrix      :   1% |                    emitting matrix      :   2% |                    emitting matrix      :   3% |#                   emitting matrix      :   4% |#                   emitting matrix      :   5% |##                  emitting matrix      :   6% |##                  emitting matrix      :   7% |###                 emitting matrix      :   8% |###                 emitting matrix      :   9% |###                 emitting matrix      :  10% |####                emitting matrix      :  11% |####                emitting matrix      :  12% |#####               emitting matrix      :  13% |#####               emitting matrix      :  14% |######              emitting matrix      :  15% |######              emitting matrix      :  16% |######              emitting matrix      :  17% |#######             emitting matrix      :  18% |#######             emitting matrix      :  19% |########            emitting matrix      :  20% |########            emitting matrix      :  21% |#########           emitting matrix      :  22% |#########           emitting matrix      :  23% |#########           emitting matrix      :  24% |##########          emitting matrix      :  25% |##########          emitting matrix      :  26% |###########         emitting matrix      :  27% |###########         emitting matrix      :  28% |############        emitting matrix      :  29% |############        emitting matrix      :  30% |############        emitting matrix      :  31% |#############       emitting matrix      :  32% |#############       emitting matrix      :  33% |##############      emitting matrix      :  34% |##############      emitting matrix      :  35% |###############     emitting matrix      :  36% |###############     emitting matrix      :  37% |###############     emitting matrix      :  38% |################    emitting matrix      :  39% |################    emitting matrix      :  40% |#################   emitting matrix      :  41% |#################   emitting matrix      :  42% |##################  emitting matrix      :  43% |##################  emitting matrix      :  44% |##################  emitting matrix      :  45% |################### emitting matrix      :  46% |################### emitting matrix      :  47% |####################emitting matrix      :  48% |####################emitting matrix      :  49% |####################emitting matrix      :  50% |####################emitting matrix      :  51% |####################emitting matrix      :  52% |####################emitting matrix      :  53% |####################emitting matrix      :  54% |####################emitting matrix      :  55% |####################emitting matrix      :  56% |####################emitting matrix      :  57% |####################emitting matrix      :  58% |####################emitting matrix      :  59% |####################emitting matrix      :  60% |####################emitting matrix      :  61% |####################emitting matrix      :  62% |####################emitting matrix      :  63% |####################emitting matrix      :  64% |####################emitting matrix      :  65% |####################emitting matrix      :  66% |####################emitting matrix      :  67% |####################emitting matrix      :  68% |####################emitting matrix      :  69% |####################emitting matrix      :  70% |####################emitting matrix      :  71% |####################emitting matrix      :  72% |####################emitting matrix      :  73% |####################emitting matrix      :  74% |####################emitting matrix      :  75% |####################emitting matrix      :  76% |####################emitting matrix      :  77% |####################emitting matrix      :  78% |####################emitting matrix      :  79% |####################emitting matrix      :  80% |####################emitting matrix      :  81% |####################emitting matrix      :  82% |####################emitting matrix      :  83% |####################emitting matrix      :  84% |####################emitting matrix      :  85% |####################emitting matrix      :  86% |####################emitting matrix      :  87% |####################emitting matrix      :  88% |####################emitting matrix      :  89% |####################emitting matrix      :  90% |####################emitting matrix      :  91% |####################emitting matrix      :  92% |####################emitting matrix      :  93% |####################emitting matrix      :  94% |####################emitting matrix      :  95% |####################emitting matrix      :  96% |####################emitting matrix      :  97% |####################emitting matrix      :  98% |####################emitting matrix      :  99% |####################emitting matrix      : 100% |###########################################| 
+
+done!
+update-alternatives: using /var/lib/mecab/dic/ipadic-utf8 to provide /var/lib/mecab/dic/debian (mecab-dictionary) in auto mode
+Setting up mysql-server-8.0 (8.0.39-0ubuntu0.24.04.2) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
+update-alternatives: using /etc/mysql/mysql.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Renaming removed key_buffer and myisam-recover options (if present)
+mysqld will log errors to /var/log/mysql/error.log
+mysqld is running as pid 7583
+Created symlink /etc/systemd/system/multi-user.target.wants/mysql.service → /usr/lib/systemd/system/mysql.service.
+Setting up mysql-server (8.0.39-0ubuntu0.24.04.2) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.3) ...
